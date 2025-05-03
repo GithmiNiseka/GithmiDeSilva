@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Githmi De Silva</title>
+
+    <!-- Default favicon (light mode) -->
+    <link rel="icon" type="image/svg+xml" href="/GithmiDeSilva/LogoB.png" id="favicon-light" />
+
+    <!-- Dark mode favicon (uses media query) -->
+    <link 
+      rel="icon" 
+      type="image/svg+xml" 
+      href="/GithmiDeSilva/LogoL.png" 
+      id="favicon-dark" 
+      media="(prefers-color-scheme: dark)"
+    />
+
+    <!-- Fallback for browsers that don't support media queries -->
+    <script>
+      const faviconLight = document.getElementById('favicon-light');
+      const faviconDark = document.getElementById('favicon-dark');
+
+      // Check system preference
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        faviconLight.remove();
+      } else {
+        faviconDark.remove();
+      }
+
+      // Listen for changes (e.g., user switches OS theme)
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+        if (e.matches) {
+          faviconLight.remove();
+          document.head.appendChild(faviconDark);
+        } else {
+          faviconDark.remove();
+          document.head.appendChild(faviconLight);
+        }
+      });
+    </script>
+
+    <!-- Font Awesome (optional) -->
+    <link 
+      rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
+    />
+    <script type="module" crossorigin src="/GithmiDeSilva/assets/index-D0qisnSj.js"></script>
+    <link rel="stylesheet" crossorigin href="/GithmiDeSilva/assets/index-DbpdiVjC.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
