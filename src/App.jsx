@@ -12,9 +12,10 @@ import './index.css';
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(false);
+  const basename = '/GithmiDeSilva'; // Match your repository name exactly
 
   return (
-    <Router>
+    <Router basename={basename}>
       <div className={`min-h-screen ${darkMode ? 'dark' : ''}`}>
         <div className="app-container">
           <Header darkMode={darkMode} setDarkMode={setDarkMode} />
