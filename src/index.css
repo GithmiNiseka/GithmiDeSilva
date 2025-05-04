@@ -656,9 +656,9 @@ know-me-section {
 
 .title-line {
   height: 1px; /* Thicker line */
-  width: 400px; /* Longer line */
   background-color: #757575;
-  flex-shrink: 0; /* Prevents lines from shrinking */
+  flex-shrink: 0;
+  max-width: 400px;
 }
 
 .work-items {
@@ -919,7 +919,78 @@ body.popup-open {
   }
 }
 
-.lmsCSDisplay{
+/* Mobile-first base styles */
+.lmsCSDisplay {
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.signifyCS {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Responsive scaling */
+@media (min-width: 600px) { /* Phones landscape/small tablets */
+  .signifyCS {
+    max-width: 95%;
+  }
+}
+
+@media (min-width: 768px) { /* Tablets */
+  .signifyCS {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 992px) { /* Small laptops */
+  .signifyCS {
+    max-width: 85%;
+  }
+}
+
+@media (min-width: 1200px) { /* Desktops */
+  .signifyCS {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 1600px) { /* Large screens */
+  .signifyCS {
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 992px) {
+  .title-line {
+    flex: 0 0 400px; /* Fixed width for desktop */
+  }
+}
+
+/* Tablet - Medium width lines */
+@media (min-width: 768px) and (max-width: 991px) {
+  .title-line {
+    flex: 0 0 200px;
+  }
+}
+
+@media (min-width: 576px) {
+  .section-title {
+    gap: 12px;
+    padding: 0 16px;
+  }
+  h2 {
+    font-size: 15px;
+  }
+  .title-line {
+    min-width: 30px;
+  }
 }
