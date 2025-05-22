@@ -994,3 +994,23 @@ body.popup-open {
     min-width: 30px;
   }
 }
+
+
+/* App.css or your component's CSS file */
+.lmsCSDisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.signifyCS {
+  max-width: 100%;
+  height: auto;
+}
+
+.signifyVideo {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 950px;
+}

@@ -132,6 +132,33 @@ const Hero = () => {
               </div>
             </Link>
           </div>
+
+            {/* Signify Project */}
+            <div className="work-item">
+            <Link to="/signify-case-study" className="work-item-link">
+              <div className="work-item-image-container">
+                <img 
+                  src={Signify}
+                  alt="Signify Project"
+                  className="work-item-image"
+                />
+              </div>
+              <div className="work-item-content">
+                <h3 className="work-item-title">App for Deaf Community</h3>
+                <div className="work-item-description">
+                  <p>Signify</p>
+                </div>
+              </div>
+              <div className="work-item-arrow-container">
+                <img 
+                  src={horizontalArrow} 
+                  alt="View project" 
+                  className="work-item-arrow" 
+                />
+              </div>
+            </Link>
+          </div>
+          
           {/* Farmoid Project */}
           <div className="work-item">
             <Link to="/farmoid-case-study" className="work-item-link">
@@ -158,31 +185,7 @@ const Hero = () => {
             </Link>
           </div>
 
-          {/* Signify Project */}
-          <div className="work-item">
-            <Link to="/signify-case-study" className="work-item-link">
-              <div className="work-item-image-container">
-                <img 
-                  src={Signify}
-                  alt="Signify Project"
-                  className="work-item-image"
-                />
-              </div>
-              <div className="work-item-content">
-                <h3 className="work-item-title">App for Deaf Community</h3>
-                <div className="work-item-description">
-                  <p>Signify</p>
-                </div>
-              </div>
-              <div className="work-item-arrow-container">
-                <img 
-                  src={horizontalArrow} 
-                  alt="View project" 
-                  className="work-item-arrow" 
-                />
-              </div>
-            </Link>
-          </div>
+        
 
           {/* Bus Travel Project */}
           <div className="work-item">
