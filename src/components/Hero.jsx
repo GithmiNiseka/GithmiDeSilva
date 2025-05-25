@@ -3,6 +3,7 @@ import ContactPopup from './Contact';
 import FarmoidRobotech from '../img/farmoid.png';
 import Signify from '../img/signify.png';
 import BusTravel from '../img/BusTravel.png';
+import SmartWatch from '../img/smartwatch.png';
 import MealMap from '../img/MealMap.png';
 import NewProject from '../img/dalada.png'; 
 import horizontalArrow from '../img/horizontalArrow.png';
@@ -185,7 +186,31 @@ const Hero = () => {
             </Link>
           </div>
 
-        
+         {/* Smart watch Project */}
+         <div className="work-item">
+            <Link to="/smart-watch-study" className="work-item-link">
+              <div className="work-item-image-container">
+                <img 
+                  src={SmartWatch}
+                  alt="Bus Travel Project"
+                  className="work-item-image"
+                />
+              </div>
+              <div className="work-item-content">
+                <h3 className="work-item-title">Daily Nutrition Tracker</h3>
+                <div className="work-item-description">
+                  <p>Smart Watch</p>
+                </div>
+              </div>
+              <div className="work-item-arrow-container">
+                <img 
+                  src={horizontalArrow} 
+                  alt="View project" 
+                  className="work-item-arrow" 
+                />
+              </div>
+            </Link>
+          </div>
 
           {/* Bus Travel Project */}
           <div className="work-item">

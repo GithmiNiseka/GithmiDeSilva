@@ -8,6 +8,7 @@ import FarmoidCS from './components/farmoidCSPage';
 import BusCS from './components/BusCS';
 import MealMapCS from './components/mealMapCS';
 import DaladaCS from './components/daladaCSPage';
+import SmartWatchCS from './components/smartwatchCSPage';
 import './index.css';
 
 export default function App() {
@@ -26,6 +27,7 @@ export default function App() {
             <Route path="/bus-case-study" element={<BusCS />} />
             <Route path="/mealmap-case-study" element={<MealMapCS />} />
             <Route path="/dalada-case-study" element={<DaladaCS />} />
+            <Route path="/smart-watch-study" element={<SmartWatchCS />} />
           </Routes>
           <Footer />
         </div>
