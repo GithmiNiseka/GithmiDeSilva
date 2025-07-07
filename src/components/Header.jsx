@@ -1,37 +1,27 @@
 import React from 'react';
-import { FaGithub, FaBehance, FaMedium,FaLinkedin } from 'react-icons/fa'; // Using react-icons library
+import { Link } from 'react-router-dom'; // Add this import
+import { FaGithub, FaBehance, FaMedium, FaLinkedin } from 'react-icons/fa';
 import logo from '../img/Logo.png';
+
 const Header = () => {
   return (
-    <div className="header-bar">
-      <div className="logo">
-        <img 
-                  src={logo}
-                  alt="Scroll to top"
-                  style={{
-                    width: '200px',
-                    height: '40px',
-                    cursor: 'pointer',
-                  
-                  }}/>
+    <header className="header-bar">
+      <div className="header-bar-content">
+        {/* LEFT SIDE - LOGO */}
+        <Link to="/" style={{ textDecoration: 'none' }}>
+          <div className="header-logo-container">
+            <img 
+              src={logo}
+              alt="Logo"
+              className="header-logo"
+            />
+          </div>
+        </Link>
         
-        </div> {/* Replace with your logo */}
-      
-      <div className="social-icons">
-        <a href="https://github.com/GithmiNiseka" target="_blank" rel="noopener noreferrer" className="icon-box">
-          <FaGithub className="icon" />
-        </a>
-        <a href="https://www.behance.net/githmidesilva" target="_blank" rel="noopener noreferrer" className="icon-box">
-          <FaBehance className="icon" />
-        </a>
-        <a href="https://medium.com/@2020is026" target="_blank" rel="noopener noreferrer" className="icon-box">
-          <FaMedium className="icon" />
-        </a>
-        <a href="https://www.linkedin.com/in/githmi-de-silva-802084222/" target="_blank" rel="noopener noreferrer" className="icon-box">
-    <FaLinkedin className="icon" />
-  </a>
+        {/* RIGHT SIDE - ICONS */}
+        {/* Add your icons here if needed */}
       </div>
-    </div>
+    </header>
   );
 };
 

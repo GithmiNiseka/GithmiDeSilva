@@ -9,7 +9,7 @@ import BusCS from './components/BusCS';
 import MealMapCS from './components/mealMapCS';
 import DaladaCS from './components/daladaCSPage';
 import SmartWatchCS from './components/smartwatchCSPage';
-import './index.css';
+import './App.css';
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(false);

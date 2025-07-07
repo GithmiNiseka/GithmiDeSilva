@@ -18,7 +18,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="profile-container">
+    <div className="profile-container"  style={{ marginTop: '20px' }}>
       <div className="profile-box">
         <div className="profile-header">
           <div className="profile-image-container">
@@ -34,8 +34,8 @@ const Hero = () => {
           <ContactPopup onClose={() => setShowContact(false)} />
         )}
         
-        <h1 className="profile-name">Githmi De Silva</h1>
-        <p className="profile-title">UI/UX Engineer</p>
+        <h1 className="profile-name" style={{textAlign:'left', fontFamily:'Verdana, Geneva, Tahoma, sans-serif'}}>Githmi De Silva</h1>
+        <p className="profile-title" style={{textAlign:'left', fontFamily:'Verdana, Geneva, Tahoma, sans-serif'}}>UI/UX Engineer</p>
         
         <div className="skills-container">
           <span className="skill-box">Figma</span>
@@ -103,7 +103,7 @@ const Hero = () => {
       <div className="work-section">
         <div className="section-title">
           <div className="title-line"></div>
-          <h2>SOME OF MY LAST WORK</h2>
+          <h1>SOME OF MY LAST WORK</h1>
           <div className="title-line"></div>
         </div>
         
@@ -119,9 +119,9 @@ const Hero = () => {
                 />
               </div>
               <div className="work-item-content">
-                <h3 className="work-item-title">Sacred Queue Management </h3>
+                <h3 className="work-item-title">Social Media Profile Verification </h3>
                 <div className="work-item-description">
-                  <p>DaladaLine</p>
+                  <p>Veriface</p>
                 </div>
               </div>
               <div className="work-item-arrow-container">
@@ -133,6 +133,33 @@ const Hero = () => {
               </div>
             </Link>
           </div>
+
+           {/* Farmoid Project */}
+          <div className="work-item">
+            <Link to="/farmoid-case-study" className="work-item-link">
+              <div className="work-item-image-container">
+                <img 
+                  src={FarmoidRobotech}
+                  alt="Farmoid Robotech Project"
+                  className="work-item-image"
+                />
+              </div>
+              <div className="work-item-content">
+                <h3 className="work-item-title">Connect and care Elders remotely </h3>
+                <div className="work-item-description">
+                  <p>Trust Circle</p>
+                </div>
+              </div>
+              <div className="work-item-arrow-container">
+                <img 
+                  src={horizontalArrow} 
+                  alt="View project" 
+                  className="work-item-arrow" 
+                />
+              </div>
+            </Link>
+          </div>
+
 
             {/* Signify Project */}
             <div className="work-item">
@@ -160,33 +187,8 @@ const Hero = () => {
             </Link>
           </div>
           
-          {/* Farmoid Project */}
-          <div className="work-item">
-            <Link to="/farmoid-case-study" className="work-item-link">
-              <div className="work-item-image-container">
-                <img 
-                  src={FarmoidRobotech}
-                  alt="Farmoid Robotech Project"
-                  className="work-item-image"
-                />
-              </div>
-              <div className="work-item-content">
-                <h3 className="work-item-title">App for Farmoid Robotech</h3>
-                <div className="work-item-description">
-                  <p>Smart Farming</p>
-                </div>
-              </div>
-              <div className="work-item-arrow-container">
-                <img 
-                  src={horizontalArrow} 
-                  alt="View project" 
-                  className="work-item-arrow" 
-                />
-              </div>
-            </Link>
-          </div>
-
-         {/* Smart watch Project */}
+         
+         {/* Smart watch Project *
          <div className="work-item">
             <Link to="/smart-watch-study" className="work-item-link">
               <div className="work-item-image-container">
@@ -212,7 +214,7 @@ const Hero = () => {
             </Link>
           </div>
 
-          {/* Bus Travel Project */}
+          {/* Bus Travel Project 
           <div className="work-item">
             <Link to="/bus-case-study" className="work-item-link">
               <div className="work-item-image-container">
@@ -238,7 +240,7 @@ const Hero = () => {
             </Link>
           </div>
 
-          {/* MealMap Project */}
+          {/* MealMap Project 
           <div className="work-item">
             <Link to="/mealmap-case-study" className="work-item-link">
               <div className="work-item-image-container">
@@ -263,7 +265,7 @@ const Hero = () => {
               </div>
             </Link>
           </div>
-
+*/}
          
         </div>
       </div>

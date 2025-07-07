@@ -518,7 +518,7 @@ body.dark {
   display: flex;
   flex-direction: column;
   align-items: left;
-  text-align: left;
+  text-align: left ;
 }
 
 
@@ -562,8 +562,8 @@ know-me-section {
 }
 
 .divider-line {
-  height: 1px;
-  background-color: #b1b1b1; /* Light gray line */
+  height: 0.7px;
+  background-color: #dedede; /* Light gray line */
   margin-bottom: 15px; /* Space between line and text */
 }
 
@@ -612,7 +612,7 @@ know-me-section {
 .about-me-box h2 {
   letter-spacing: 2px;
   font-weight: 100;
-  font-size: 20px;
+  font-size: 15px;
   margin-bottom: 10px;
 }
 
@@ -644,19 +644,19 @@ know-me-section {
   margin-bottom: 40px;
 }
 
-.section-title h2 {
+.section-title h1 {
   margin: 0 25px;
-  color: #767676;
+  color: #606060;
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-weight: 5200;
+  font-weight: 200;
   white-space: nowrap; /* Prevents text from wrapping */
 }
 
 .title-line {
-  height: 1px; /* Thicker line */
-  background-color: #757575;
+  height: 0.8px; /* Thicker line */
+  background-color: #dedede;
   flex-shrink: 0;
   max-width: 400px;
 }
