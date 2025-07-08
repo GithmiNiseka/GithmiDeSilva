@@ -99,8 +99,8 @@ const DaladaCSPage = () => {
   gap: '30px',  // Increased gap for better separation
   marginBottom: '20px'  // Added margin at bottom
 }}>
-  <Link 
-    to="/" 
+  <a 
+    href="/" 
     style={{ 
       color: '#2c3e50', 
       textDecoration: 'none',
@@ -126,7 +126,7 @@ const DaladaCSPage = () => {
         color: '#2c3e50'
       }} 
     />
-  </Link>
+  </a>
   <h1 style={{
     fontSize: '2.2rem',
     fontWeight: '450',
