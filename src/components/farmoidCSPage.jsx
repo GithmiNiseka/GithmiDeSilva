@@ -232,7 +232,7 @@ const FarmoidCSPage = () => {
       display: 'block',
       marginTop: '8px',
       color: '#7f8c8d'
-    }}>| Connect and care for Elders remotely</span>
+    }}> Connect and care for Elders remotely</span>
   </h1>
 </div>
 

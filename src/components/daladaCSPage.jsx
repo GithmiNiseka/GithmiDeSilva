@@ -78,7 +78,7 @@ const DaladaCSPage = () => {
   }, [visibleSections]);
 
   return (
-    <div style={{
+<div style={{
       width: '100%',
       margin: 0,
       padding: '40px 20px',
@@ -93,19 +93,50 @@ const DaladaCSPage = () => {
         gap: '80px',
         width: '100%'
       }}>
-
-        <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
-          <a href="/" style={{ color: '#2c3e50', textDecoration: 'none' }}>
-            <FontAwesomeIcon icon={faHome} style={{ fontSize: '1.5rem' }} />
-          </a>
-          <h1 style={{
-            fontSize: '2.2rem',
-            fontWeight: '450',
-            color: '#2c3e50',
-            margin: 0,
-            textAlign: 'left',
-          }}>
-            VeriFace <span style={{ fontSize: '1.5rem', fontWeight: '400' }}>| Social Media Profile Verification</span>
+        <div style={{ 
+  display: 'flex', 
+  alignItems: 'center', 
+  gap: '30px',  // Increased gap for better separation
+  marginBottom: '20px'  // Added margin at bottom
+}}>
+  <a 
+    href="/" 
+    style={{ 
+      color: '#2c3e50', 
+      textDecoration: 'none',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      width: '60px',  // Fixed width for the icon box
+      height: '60px',  // Fixed height for the icon box
+      backgroundColor: 'white',
+      borderRadius: '12px',
+      boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+      transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+      ':hover': {
+        transform: 'scale(1.05)',
+        boxShadow: '0 6px 16px rgba(0,0,0,0.15)'
+      }
+    }}
+  >
+    <FontAwesomeIcon 
+      icon={faHome} 
+      style={{ 
+        fontSize: '2rem',  // Larger icon size
+        color: '#2c3e50'
+      }} 
+    />
+  </a>
+  <h1 style={{
+    fontSize: '2.2rem',
+    fontWeight: '450',
+    color: '#2c3e50',
+    margin: 0,
+    textAlign: 'left',
+    paddingLeft: '10px',  // Added padding to separate from icon
+    borderLeft: '2px solid #e0e0e0'  // Added subtle border for separation
+  }}>
+            VeriFace <span style={{ fontSize: '1.5rem', fontWeight: '400' }}>Social Media Profile Verification</span>
           </h1>
         </div>
 
